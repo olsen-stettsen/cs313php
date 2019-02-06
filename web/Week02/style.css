@@ -1,0 +1,7 @@
+.one{
+    font-size: 16px;
+    color: #ac0000;
+}
+.one:hover{
+    font: bold;
+}
