@@ -29,7 +29,7 @@ $db = get_db();
     </div>
     <div id="content">
         <h1>User Messages</h1>
-        <select name="userslist" id="userselect" form="userlistform">
+        <select name="userslist" id="userselect">
             <option value="steve">Steve</option>
             <option value="jim">Jim</option>
             <option value="sally">Sally</option>
