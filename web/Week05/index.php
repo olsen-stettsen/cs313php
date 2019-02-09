@@ -28,6 +28,13 @@ $db = get_db();
         <a class="breadcrumb" href="./index.php">>PHP Data Access</a>
     </div>
     <div id="content">
+        <h1>User Messages</h1>
+        <select name="userslist" form="userlistform">
+            <option value="steve">Steve</option>
+            <option value="jim">Jim</option>
+            <option value="sally">Sally</option>
+            <option value="all">All</option>
+        </select> 
         <?php
         $statement = $db->prepare("SELECT user_name, post_text FROM temp_table");
         $statement->execute();
@@ -37,8 +44,7 @@ $db = get_db();
             $post = $row['post_text'];
             echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"<p>";
         }
-        ?>
-            
+        ?>          
     </div>
 </body>
 
