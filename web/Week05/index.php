@@ -35,7 +35,7 @@ $db = get_db();
             <option value="sally">Sally</option>
             <option value="all">All</option>
         </select> 
-        <input id="db" type="hidden" value="<?php echo get_db() ?>">
+        <input id="db" type="hidden" value="<?php $db ?>">
         <?php
         $statement = $db->prepare("SELECT user_name, post_text FROM temp_table");
         $statement->execute();
