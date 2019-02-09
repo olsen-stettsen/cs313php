@@ -30,9 +30,9 @@ $db = get_db();
     <div id="content">
         <h1>User Messages</h1>
         <select name="userslist" id="userselect">
-            <option value="steve">Steve</option>
-            <option value="jim">Jim</option>
-            <option value="sally">Sally</option>
+            <option value="Steve">Steve</option>
+            <option value="Jim">Jim</option>
+            <option value="Sally">Sally</option>
             <option value="all">All</option>
         </select>                  
     </div>
