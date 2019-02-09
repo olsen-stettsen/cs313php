@@ -1,6 +1,5 @@
 //document.onload = main();
 function main(){
-    alert(document.getElementById("db").value);
     document.getElementById("userselect").addEventListener("change", dbLookup);
 }
 function dbLookup(){
@@ -8,7 +7,7 @@ function dbLookup(){
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            //alert(this.responseText);
+            alert(this.responseText);
         }
     };
     xmlhttp.open("GET", "getUserStuff.php?q=" + user, true); // '?' is the start and '&' is next var
