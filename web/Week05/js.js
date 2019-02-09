@@ -1,6 +1,6 @@
 //document.onload = main();
 function main(){
-    document.getElementById("userselect").addEventListener("change", dbLookup);
+    document.getElementById("userselect").onchange = dbLookup();
 }
 function dbLookup(){
     alert("hi");
