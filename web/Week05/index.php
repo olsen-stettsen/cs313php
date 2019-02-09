@@ -29,8 +29,14 @@ $db = get_db();
     </div>
     <div id="content">
         <?php
-        $statement = $db->prepare("SELECT book, chapter, verse, content FROM scripture");
+        $statement = $db->prepare("SELECT user_name, post_text FROM temp_table");
         $statement->execute();
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+        {
+            $user = $row['user_name'];
+            $post = $row['post_text'];
+            echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"<p>";
+        }
         ?>
             
     </div>
