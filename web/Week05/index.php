@@ -15,7 +15,7 @@ $db = get_db();
         <div id="header">
                 <div id="headerfilter">
                     <!--<h1>CS 313 - Stettsen Olsen</h1>-->
-                    <img id="logo" src="logoWhite.png" alt="CS 313 - Stettsen Olsen">
+                    <img id="logo" src="../logoWhite.png" alt="CS 313 - Stettsen Olsen">
                 </div>
             </div>
     <div id="navBar">
