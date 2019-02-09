@@ -28,6 +28,10 @@ $db = get_db();
         <a class="breadcrumb" href="./index.php">>PHP Data Access</a>
     </div>
     <div id="content">
+        <?php
+        $statement = $db->prepare("SELECT book, chapter, verse, content FROM scripture");
+        $statement->execute();
+        ?>
             
     </div>
 </body>
