@@ -4,7 +4,7 @@ function main(){
 }
 function dbLookup(){
     alert("hi");
-    var xmlhttp = new XMLHttpRequest();
+    /*var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             if(this.responseText == "NONE FOUND"){
@@ -22,5 +22,5 @@ function dbLookup(){
         }
     };
     xmlhttp.open("GET", "dbLookup.php?q=" + personallicense + "&r=" + email, true); // '?' is the start and '&' is next var
-    xmlhttp.send();
+    xmlhttp.send();*/
 }
