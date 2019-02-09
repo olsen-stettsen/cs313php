@@ -42,7 +42,7 @@ $db = get_db();
         {
             $user = $row['user_name'];
             $post = $row['post_text'];
-            echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"<p>";
+            echo "<p><i>$post</i> -$user";
         }
         ?>          
     </div>
