@@ -1,27 +1,26 @@
 //document.onload = main();
 function main(){
-    document.getElementById("subbtn").addEventListener("click", prompClick);
+    document.getElementById("selectbtn").addEventListener("click", dbLookup);
 }
-function prompClick(){
-    php();
-    hidePrompt();
-}
-function php(){
-    var input = document.getElementById("loginname").value;
-    var date = new Date();
-    var stamp = date.toUTCString();
-    var visitor = {name:input, time:stamp};
-    var visitorJSON = JSON.stringify(visitor);
-    //alert(visitorJSON);
+function dbLookup(){
+    alert("hi");
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 200){
-            //alert(this.responseText)
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            if(this.responseText == "NONE FOUND"){
+                alert("Our records show no account with this information. Please verify your input.");
+            }
+            else{
+            localStorage.setItem("member", this.responseText);
+            var member = JSON.parse(this.responseText);
+            populateThankYouData(member); // placed here so that page wouldn't load with wrong info
+            document.getElementById("thankYouNameh1").innerHTML = "User Information";
+            document.getElementById("thankYouNameh2").innerHTML = "";
+            document.getElementById("newconfirm").innerHTML = "Done";
+            existingMemberInfoVisible();
+            }
         }
     };
-    xmlhttp.open("GET", "save.php?q=" + visitorJSON, true);
+    xmlhttp.open("GET", "dbLookup.php?q=" + personallicense + "&r=" + email, true); // '?' is the start and '&' is next var
     xmlhttp.send();
-}
-function hidePrompt(){
-    document.getElementById("login").style.visibility = "hidden";
 }
