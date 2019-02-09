@@ -1,26 +1,17 @@
 //document.onload = main();
 function main(){
+    alert(document.getElementById("db").value);
     document.getElementById("userselect").addEventListener("change", dbLookup);
 }
 function dbLookup(){
-    alert("hi");
-    /*var xmlhttp = new XMLHttpRequest();
+    alert(document.getElementById("userselect").value);
+    var user = document.getElementById("userselect").value;
+    var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            if(this.responseText == "NONE FOUND"){
-                alert("Our records show no account with this information. Please verify your input.");
-            }
-            else{
-            localStorage.setItem("member", this.responseText);
-            var member = JSON.parse(this.responseText);
-            populateThankYouData(member); // placed here so that page wouldn't load with wrong info
-            document.getElementById("thankYouNameh1").innerHTML = "User Information";
-            document.getElementById("thankYouNameh2").innerHTML = "";
-            document.getElementById("newconfirm").innerHTML = "Done";
-            existingMemberInfoVisible();
-            }
+            //alert(this.responseText);
         }
     };
-    xmlhttp.open("GET", "dbLookup.php?q=" + personallicense + "&r=" + email, true); // '?' is the start and '&' is next var
-    xmlhttp.send();*/
+    xmlhttp.open("GET", "getUserStuff.php?q=" + user, true); // '?' is the start and '&' is next var
+    xmlhttp.send();
 }

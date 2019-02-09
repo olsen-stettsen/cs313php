@@ -35,16 +35,7 @@ $db = get_db();
             <option value="sally">Sally</option>
             <option value="all">All</option>
         </select> 
-        <?php
-        $statement = $db->prepare("SELECT user_name, post_text FROM temp_table");
-        $statement->execute();
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-        {
-            $user = $row['user_name'];
-            $post = $row['post_text'];
-            echo "<p><i>$post</i> -$user";
-        }
-        ?>          
+        <input id="db" type="hidden" value="<?php echo get_db() ?>">                 
     </div>
 </body>
 
