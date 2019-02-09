@@ -4,7 +4,6 @@ function main(){
     document.getElementById("userselect").addEventListener("change", dbLookup);
 }
 function dbLookup(){
-    alert(document.getElementById("userselect").value);
     var user = document.getElementById("userselect").value;
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
