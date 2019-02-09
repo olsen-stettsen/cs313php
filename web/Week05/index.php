@@ -11,7 +11,7 @@ $db = get_db();
     <script src="js.js"></script>
 </head>
 
-<body>
+<body onload="main()">
         <div id="header">
                 <div id="headerfilter">
                     <!--<h1>CS 313 - Stettsen Olsen</h1>-->
