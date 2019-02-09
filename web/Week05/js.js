@@ -1,5 +1,6 @@
 //document.onload = main();
 function main(){
+    alert("hi");
     document.getElementById("userselect").onchange = dbLookup();
 }
 function dbLookup(){
