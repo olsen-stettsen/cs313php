@@ -8,14 +8,14 @@ h1{
     margin: 0%;
 }
 #header{
-    background-image: url("./islandheader.png");
+    background-image: url("./islandheader2.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 #headerfilter{
-    padding-top: 20px;
+    /*padding-top: 20px;
     padding-bottom: 20px;
-    background-image: linear-gradient(to right,#ffffff00, #ffffff);
+    background-image: linear-gradient(to right,#ffffff00, #ffffff);*/
 }
 #logo{
     max-height: 48pt;
