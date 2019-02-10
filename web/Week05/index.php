@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>CS 313 - Stettsen Olsen - PHP Data Access</title>
     <link rel="stylesheet" href="style.css">
