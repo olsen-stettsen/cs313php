@@ -67,6 +67,6 @@ h1{
     border-radius: 12px;
 }
 #content{
-    margin: auto;
+    margin: 0;
     width: 85%;
 }
