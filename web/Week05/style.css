@@ -1,9 +1,9 @@
-body{
+/*body{
     height: 100%;
     width: 100%;
     margin: 0;
     /*font-family: Arial Black,Arial Bold,sans-serif;*/
-}
+}/*
 h1{
     margin: 0%;
 }
@@ -41,9 +41,9 @@ h1{
 .breadcrumb{
     visibility: hidden;
     font-size: 8pt;
-}
+}*/
 #textwrap{
     margin-left: 10%;
     margin-right: 10%;
-    color: rebeccapurple;
+    color: purple;
 }
