@@ -66,3 +66,7 @@ h1{
     background-color: #ffffff;
     border-radius: 12px;
 }
+#content{
+    margin: auto;
+    width: 85%;
+}
