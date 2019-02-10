@@ -23,7 +23,7 @@
         <a class="breadcrumb" href="./index.php">>PHP Data Access</a>
     </div>
     <div id="textwrap">
-    <div id="content">
+    <div id="content" style="background-color: red;">
         <h1>User Messages</h1>
         <select name="userslist" id="userselect">
             <option value="">Choose One</option>
