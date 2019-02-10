@@ -13,8 +13,8 @@ h1{
     background-repeat: no-repeat;
 }
 #headerfilter{
-   /* padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;/*
     background-image: linear-gradient(to right,#ffffff00, #ffffff);*/
 }
 #logo{
