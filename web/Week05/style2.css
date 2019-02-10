@@ -49,10 +49,11 @@ h1{
 .postbox{
     width: 100%;
     border: #000000 2pt solid;
-    border-radius: 12px;
+    border-radius: 12pt;
 }
 .postboxhead{
     width: 100%;
     background-color: #ff0000;
-   /* border-radius: 12px;*/
+    border-top-left-radius: 12pt;
+    border-top-right-radius: 12pt;
 }
