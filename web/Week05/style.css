@@ -46,13 +46,6 @@ h1{
     margin-left: 10%;
     margin-right: 10%;
 }
-.picCon{
-    text-align: center;
-}
-.pic{
-    border-radius: 12px;
-    max-width: 60%;
-}
 #content{
     background-color: red;
 }
