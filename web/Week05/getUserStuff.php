@@ -3,7 +3,7 @@ require "getDB.php";
 $db = get_db();
 $q = $_REQUEST["q"];
 if ($q != "all"){
-$statement = $db->prepare("SELECT user_name, post_text FROM temp_table WHERE user_name = $q");
+$statement = $db->prepare("SELECT user_name, post_text FROM temp_table WHERE user_name='$q'");
 $statement->execute();
 }
 else{
