@@ -9,7 +9,6 @@
 <body onload="main()">
         <div id="header">
                 <div id="headerfilter">
-                    <!--<h1>CS 313 - Stettsen Olsen</h1>-->
                     <img id="logo" src="../logoWhite.png" alt="CS 313 - Stettsen Olsen">
                 </div>
             </div>
