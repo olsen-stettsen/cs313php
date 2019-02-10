@@ -8,7 +8,7 @@ h1{
     margin: 0%;
 }
 #header{
-    background-image: url("https://www.designyourway.net/drb/wp-content/uploads/2015/05/Beach-Wallpaper-Desktop-Background-44-1600x900.jpg");
+    background-image: url("./islandheader.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
