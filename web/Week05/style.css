@@ -67,6 +67,7 @@ h1{
     border-radius: 12px;
 }
 #content{
+    background-color: #ff0000;
     margin-left: 7.5%;
     width: 85%;
 }
