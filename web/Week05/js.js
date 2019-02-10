@@ -11,6 +11,6 @@ function dbLookup(){
             alert(this.responseText);
         }
     };
-    xmlhttp.open("GET", "index.php?q=" + user, true); // '?' is the start and '&' is next var
+    xmlhttp.open("GET", "getUserStuff.php?q=" + user, true); // '?' is the start and '&' is next var
     xmlhttp.send();
 }

@@ -1,4 +1,6 @@
 <?php
+require "getDB.php";
+$db = get_db();
 $q = $_REQUEST["q"];
 echo "$q";
 $statement = $db->prepare("SELECT user_name, post_text FROM temp_table");
@@ -9,4 +11,4 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
     $post = $row['post_text'];
     echo "<p><i>$post</i> -$user";
 }
-?> 
+?>
