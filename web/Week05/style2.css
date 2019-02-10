@@ -55,7 +55,7 @@ h1{
 }
 .postboxhead{
     width: 100%;
-    background-color: #ff0000;
+    background-image: url("../postheader.png");
     border-top-left-radius: 10pt;
     border-top-right-radius: 10pt;
     border-bottom: #000000 .5pt solid;
