@@ -45,5 +45,13 @@ h1{
 #textwrap{
     margin-left: 10%;
     margin-right: 10%;
-    color: purple;
+}
+.postbox{
+    width: 100%;
+    border: #000000 2pt solid;
+    border-radius: 12px;
+}
+.postboxhead{
+    width: 100%;
+    background-color: #ff0000;
 }
