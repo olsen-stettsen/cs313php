@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>CS 313 - Stettsen Olsen - PHP Data Access</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <script src="js.js"></script>
 </head>
 
