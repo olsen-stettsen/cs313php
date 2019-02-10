@@ -38,3 +38,5 @@ INSERT INTO temp_table (user_name, post_text)
   VALUES ('Steve', 'Thats not true! I like cake more!');
 INSERT INTO temp_table (user_name, post_text)
   VALUES ('Sally', 'Lets agree we all like cake equally');
+INSERT INTO temp_table (user_name, post_text)
+  VALUES ('Jim', 'Oops! I meant not like me you dont');
