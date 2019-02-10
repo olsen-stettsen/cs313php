@@ -26,6 +26,7 @@
     <div id="content">
         <h1>User Messages</h1>
         <select name="userslist" id="userselect">
+            <option value="">Choose One</option>
             <option value="Steve">Steve</option>
             <option value="Jim">Jim</option>
             <option value="Sally">Sally</option>
