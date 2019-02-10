@@ -50,10 +50,13 @@ h1{
     width: 100%;
     border: #000000 2pt solid;
     border-radius: 12pt;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
 }
 .postboxhead{
     width: 100%;
     background-color: #ff0000;
-    border-top-left-radius: 11pt;
-    border-top-right-radius: 11pt;
+    border-top-left-radius: 10pt;
+    border-top-right-radius: 10pt;
+    border-bottom: #000000 .5pt solid;
 }
