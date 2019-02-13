@@ -25,7 +25,7 @@ function dbWrite(){
     var content = document.getElementById("content_i").value;
     var topic = document.getElementById("topic_i").value;
 
-    alert("book=" + book + " chapter=" + chapter + " verse=" + verse + " content=" + content + " topic=" + topic);
+    //alert("book=" + book + " chapter=" + chapter + " verse=" + verse + " content=" + content + " topic=" + topic);
 
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
@@ -36,5 +36,5 @@ function dbWrite(){
     };
     xmlhttp.open("GET", "writeTopicStuff.php?book=" + book + "&chapter=" + chapter + "&verse=" + verse + "&content=" + content + "&topic=" + topic, true); // '?' is the start and '&' is next var
     xmlhttp.send();
-    dbLookup();
+    main();
 }
