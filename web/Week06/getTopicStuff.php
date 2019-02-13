@@ -24,7 +24,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
         $topicslist = '';
 		while ($row2 = $topics->fetch(PDO::FETCH_ASSOC))
 		{
-			$topicslist = $row2['name'] . ' ';
+			$topicslist .= $row2['name'] . ' ';
         }
         
     echo "<div class='postbox'><div class='postboxhead'><span class='usertext'>$book $chapter:$verse - $topicslist</span></div><span class='posttext'>$content</span></div>";
