@@ -17,14 +17,14 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
     $verse = $row['verse'];
     $content = $row['content'];
  
-    $topics = $db->prepare('SELECT name FROM topic topic' . ' INNER JOIN topic_to_scripture_lookup lookup ON lookup.topic_id = topic.topic_id' . ' WHERE lookup.scripture_id = :scripture_id');
+    $topics = $db->prepare('SELECT name FROM topic topic INNER JOIN topic_to_scripture_lookup lookup ON lookup.topic_id = topic.topic_id WHERE lookup.scripture_id = :scripture_id');
 
     $topics->bindValue(':scripture_id', $row['scripture_id']);
         $topics->execute();
         $topicslist = '';
 		while ($row2 = $topics->fetch(PDO::FETCH_ASSOC))
 		{
-			$topicslist .= 'steve ';
+			$topicslist .= $row2['name'] . ' ';
         }
         
     echo "<div class='postbox'><div class='postboxhead'><span class='usertext'>$book $chapter:$verse - $topicslist</span></div><span class='posttext'>$content</span></div>";
