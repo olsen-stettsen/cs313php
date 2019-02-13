@@ -3,11 +3,11 @@ require "getDB.php";
 $db = get_db();
 $q = $_REQUEST["q"];
 if ($q != "all"){
-$statement = $db->prepare("SELECT book, chapter, verse, content FROM scriptures WHERE topic='$q'");
+$statement = $db->prepare("SELECT scripture_id, book, chapter, verse, content FROM scriptures WHERE topic='$q'");
 $statement->execute();
 }
 else{
-    $statement = $db->prepare("SELECT book, chapter, verse, content FROM scriptures");
+    $statement = $db->prepare("SELECT scripture_id, book, chapter, verse, content FROM scriptures");
     $statement->execute();    
 }
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
@@ -21,7 +21,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
                             FROM topic
                             INNER JOIN topic_to_scripture_lookup
                             ON topic_to_scripture_lookup.topic_id = topic.topic_id
-                            WHERE topic_to_scripture_lookup.scripture_id = 1");
+                            WHERE topic_to_scripture_lookup.scripture_id = :scripture_id");
         $topics->execute();
         $topicslist = '';
 		while ($row2 = $topics->fetch(PDO::FETCH_ASSOC))
