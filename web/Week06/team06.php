@@ -28,7 +28,7 @@
         <input type="text" id="book_i" placeholder="Book">
         <input type="number" id="chapter_i" placeholder="Chapter">
         <input type="number" id="verse_i" placeholder="Verse">
-        <input type="number" id="content_i" placeholder="Content">
+        <input type="text" id="content_i" placeholder="Content">
         <input type="text" id="topic_i" placeholder="Topic">
         <button id="btn_i">Go</button>
         <!--
