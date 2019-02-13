@@ -23,7 +23,7 @@
     </div>
     <div id="textwrap">
     <div id="content">
-        <h1>User Messages</h1>
+        <h1>Team06 Scripture Insert</h1>
         <select name="userslist" id="userselect">
             <option value="">Choose One</option>
             <option value="Steve">Steve</option>
