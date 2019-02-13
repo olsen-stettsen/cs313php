@@ -22,3 +22,8 @@ CREATE TABLE topic_to_scripture_lookup (
 INSERT INTO scriptures (book, chapter, verse, content)
 VALUES
 ('boooook', 55, 22, 'cooooooonttteeennnt');
+INSERT INTO  topic_to_scripture_lookup (topic_id, scripture_id)
+VALUES
+(1, 1),
+(2, 1),
+(3, 1);
