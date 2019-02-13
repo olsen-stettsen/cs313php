@@ -1,6 +1,7 @@
 //document.onload = main();
 function main(){
-    document.getElementById("topicselect").addEventListener("change", dbLookup);
+    //document.getElementById("topicselect").addEventListener("change", dbLookup);
+    dbLookup(); //hardcoded
 }
 function dbLookup(){
     //alert(document.getElementById("topicselect").value);
