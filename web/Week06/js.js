@@ -5,7 +5,8 @@ function main(){
 }
 function dbLookup(){
     //alert(document.getElementById("topicselect").value);
-    var topic = document.getElementById("topicselect").value;
+    //var topic = document.getElementById("topicselect").value;
+    var topic = 'all';
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
