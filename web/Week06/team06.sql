@@ -19,3 +19,6 @@ CREATE TABLE topic_to_scripture_lookup (
     topic_id        int             NOT NULL REFERENCES topic(topic_id),
     scripture_id    int             NOT NULL REFERENCES scriptures(scripture_id)
 );
+INSERT INTO scriptures (book, chapter, verse, content)
+VALUES
+('boooook', 55, 22, 'cooooooonttteeennnt');

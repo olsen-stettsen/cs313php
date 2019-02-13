@@ -24,7 +24,7 @@
     <div id="textwrap">
     <div id="content">
         <h1>Team06 Scripture Insert</h1>
-        <select name="userslist" id="userselect">
+        <select name="topiclist" id="topicselect">
             <option value="">Choose One</option>
             <option value="Steve">Steve</option>
             <option value="Jim">Jim</option>
