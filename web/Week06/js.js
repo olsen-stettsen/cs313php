@@ -36,5 +36,13 @@ function dbWrite(){
     };
     xmlhttp.open("GET", "writeTopicStuff.php?book=" + book + "&chapter=" + chapter + "&verse=" + verse + "&content=" + content + "&topic=" + topic, true); // '?' is the start and '&' is next var
     xmlhttp.send();
-    main();
+    enter();
+}
+function enter(){
+    document.getElementById("book_i").value = '';
+    document.getElementById("chapter_i").value = '';
+    document.getElementById("verse_i").value = '';
+    document.getElementById("content_i").value = '';
+    document.getElementById("topic_i").value = '';
+    dbLookup();
 }
