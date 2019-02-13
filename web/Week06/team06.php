@@ -24,10 +24,13 @@
     <div id="textwrap">
     <div id="content">
         <h1>Team06 Scripture Insert</h1>
-        <input type="text" id="book">
-        <input type="number" id="chapter">
-        <input type="number" id="verse">
-        <input type="text" id="topic">
+        <h4>Insert a Scripture</h4>
+        <input type="text" id="book_i" placeholder="Book">
+        <input type="number" id="chapter_i" placeholder="Chapter">
+        <input type="number" id="verse_i" placeholder="Verse">
+        <input type="number" id="content_i" placeholder="Content">
+        <input type="text" id="topic_i" placeholder="Topic">
+        <button id="btn_i">Go</button>
         <!--
         <select name="topiclist" id="topicselect">
             <option value="">Choose One</option>
