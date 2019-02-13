@@ -23,7 +23,12 @@
     </div>
     <div id="textwrap">
     <div id="content">
-        <h1>Team06 Scripture Insert</h1><!--
+        <h1>Team06 Scripture Insert</h1>
+        <input type="text" id="book">
+        <input type="number" id="chapter">
+        <input type="number" id="verse">
+        <input type="text" id="topic">
+        <!--
         <select name="topiclist" id="topicselect">
             <option value="">Choose One</option>
             <option value="Steve">Steve</option>
