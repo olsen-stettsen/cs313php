@@ -22,7 +22,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
                             FROM topic
                             INNER JOIN topic_to_scripture_lookup
                             ON topic_to_scripture_lookup.topic_id = topic.topic_id
-                            WHERE topic_to_scripture_lookup.scripture_id = :s_id");
+                            WHERE topic_to_scripture_lookup.scripture_id = :scripture_id");
         $topics->execute();
         $topicslist = '';
 		while ($row2 = $topics->fetch(PDO::FETCH_ASSOC))
