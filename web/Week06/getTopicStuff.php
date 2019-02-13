@@ -1,7 +1,8 @@
 <?php
 require "getDB.php";
 $db = get_db();
-$q = $_REQUEST["q"];
+//$q = $_REQUEST["q"];
+$q = 'all'; // this is hardcoded in
 if ($q != "all"){
 $statement = $db->prepare("SELECT scripture_id, book, chapter, verse, content FROM scriptures WHERE topic='$q'");
 $statement->execute();
