@@ -5,9 +5,8 @@ function main(){
     document.getElementById("btn_i").addEventListener("click", dbWrite);
 }
 function dbLookup(){
-    //alert(document.getElementById("topicselect").value);
-    //var topic = document.getElementById("topicselect").value;
-    var topic = 'all';
+    //alert(document.getElementById("userselect").value);
+    var user = document.getElementById("userselect").value;
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -15,7 +14,7 @@ function dbLookup(){
             document.getElementById("output").innerHTML = this.responseText;
         }
     };
-    xmlhttp.open("GET", "getTopicStuff.php?q=" + topic, true); // '?' is the start and '&' is next var
+    xmlhttp.open("GET", "getUserStuff.php?q=" + user, true); // '?' is the start and '&' is next var
     xmlhttp.send();
 }
 function dbWrite(){

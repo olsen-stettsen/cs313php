@@ -23,22 +23,14 @@
     </div>
     <div id="textwrap">
     <div id="content">
-        <h1>Team06 Scripture Insert</h1>
-        <h4>Insert a Scripture</h4>
-        <input type="text" id="book_i" placeholder="Book">
-        <input type="number" id="chapter_i" placeholder="Chapter">
-        <input type="number" id="verse_i" placeholder="Verse">
-        <input type="text" id="content_i" placeholder="Content">
-        <input type="text" id="topic_i" placeholder="Topic">
-        <button id="btn_i">Go</button>
-        <!--
-        <select name="topiclist" id="topicselect">
+        <h1>User Messages</h1>
+        <select name="userslist" id="userselect">
             <option value="">Choose One</option>
             <option value="Steve">Steve</option>
             <option value="Jim">Jim</option>
             <option value="Sally">Sally</option>
             <option value="all">All</option>
-        </select>   -->
+        </select>   
         <div id="output"></div>               
     </div>
     </div>
