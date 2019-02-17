@@ -1,7 +1,5 @@
-//document.onload = main();
 function main(){
     document.getElementById("userselect").addEventListener("change", dbLookup);
-    document.getElementById("btn_i").addEventListener("click", dbWrite);
     alert("1");
     getUser();
 }
