@@ -1,6 +1,6 @@
 function main(){
     document.getElementById("userselect").addEventListener("change", dbLookup);
-    document.getElementById("mkpostbtn").addEventListener("change", makepost);
+    document.getElementById("mkpostbtn").addEventListener("click", makepost);
     getUser();
 }
 function getUser(){
