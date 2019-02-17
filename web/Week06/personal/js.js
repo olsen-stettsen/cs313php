@@ -34,7 +34,7 @@ function dbWrite(post){
             //document.getElementById("output").innerHTML = this.responseText;
         }
     };
-    xmlhttp.open("GET", "writeTopicStuff.php?user=" + post.user + "&message=" + post.message); // '?' is the start and '&' is next var
+    xmlhttp.open("GET", "writePostStuff.php?user=" + post.user + "&message=" + post.message); // '?' is the start and '&' is next var
     xmlhttp.send();
     dbLookup();
 }
