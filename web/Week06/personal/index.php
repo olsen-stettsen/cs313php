@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CS 313 - Stettsen Olsen - Team06 Insert With PHP </title>
+    <title>CS 313 - Stettsen Olsen - PHP Data Modification </title>
     <link rel="stylesheet" href="./style.css">
     <script src="js.js"></script>
 </head>
