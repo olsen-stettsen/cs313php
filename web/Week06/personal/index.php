@@ -25,11 +25,10 @@
     <div id="content">
         <h1>User Messages</h1>
         <select name="userslist" id="userselect">
-            <option value="">Choose One</option>
+            <option value="all">All</option>
             <option value="Steve">Steve</option>
             <option value="Jim">Jim</option>
             <option value="Sally">Sally</option>
-            <option value="all">All</option>
         </select>
         <button id="mkpostbtn">Make a post</button>
         <div id="output"></div>               

@@ -2,6 +2,7 @@ function main(){
     document.getElementById("userselect").addEventListener("change", dbLookup);
     document.getElementById("mkpostbtn").addEventListener("click", makepost);
     getUser();
+    dbLookup();
 }
 function getUser(){
     var user = prompt("What is your name?");
@@ -21,7 +22,7 @@ function dbLookup(){
     xmlhttp.send();
 }
 function makepost(){
-    var post.user = localStorage.getItem("user");
+    var post = {user:localStorage.getItem("user")};
     post.message = prompt("Post:");
     dbWrite(post)
 }
