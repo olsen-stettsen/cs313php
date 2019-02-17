@@ -21,6 +21,7 @@ function dbLookup(){
     xmlhttp.send();
 }
 function makepost(){
+    alert("@");
     var user = localStorage.getItem("user");
     alert(user);
     var message = prompt("Post:");
