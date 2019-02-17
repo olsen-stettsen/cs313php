@@ -14,7 +14,7 @@
             </div>
     <div id="navBar">
         <a class="navI"href="../index.html">About Me</a>
-        <a class="navI" href="../assignments.html">Assignments</a>
+        <a class="navI" href="../../assignments.html">Assignments</a>
     </div>
     <div id="breadCrumbs">
         <a class="breadcrumb" href="../index.html">About Me</a>
