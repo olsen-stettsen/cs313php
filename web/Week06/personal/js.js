@@ -23,13 +23,10 @@ function dbLookup(){
 }
 function makepost(){
     var post = {user:localStorage.getItem("user")};
-    post.message = prompt("Post:");
-    dbWrite(post)
+    post.message = prompt("Post:"); //just to test
+    dbWrite(post);
 }
 function dbWrite(post){
-    alert(post.user);
-    alert(post.message);
-
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -37,15 +34,7 @@ function dbWrite(post){
             //document.getElementById("output").innerHTML = this.responseText;
         }
     };
-    xmlhttp.open("GET", "writeTopicStuff.php?book=" + book + "&chapter=" + chapter + "&verse=" + verse + "&content=" + content + "&topic=" + topic, true); // '?' is the start and '&' is next var
+    xmlhttp.open("GET", "writeTopicStuff.php?user=" + post.user + "&message=" + post.message); // '?' is the start and '&' is next var
     xmlhttp.send();
-    enter();
-}
-function enter(){
-    document.getElementById("book_i").value = '';
-    document.getElementById("chapter_i").value = '';
-    document.getElementById("verse_i").value = '';
-    document.getElementById("content_i").value = '';
-    document.getElementById("topic_i").value = '';
     dbLookup();
 }

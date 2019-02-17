@@ -1,13 +1,10 @@
 <?php
 require "getDB.php";
 $db = get_db();
-$book = $_REQUEST["book"];
-$chapter = $_REQUEST["chapter"];
-$verse = $_REQUEST["verse"];
-$content = $_REQUEST["content"];
-$topic = $_REQUEST["topic"];
+$user = $_REQUEST["user"];
+$message = $_REQUEST["message"];
 
-$statement = $db->prepare("INSERT INTO scriptures (book, chapter, verse, content)
-                           VALUES ('$book', $chapter, $verse, '$content')");
+$statement = $db->prepare("INSERT INTO temp_table (user_name, post_text)
+                           VALUES ($user, $message)");
 $statement->execute();    
 ?>
