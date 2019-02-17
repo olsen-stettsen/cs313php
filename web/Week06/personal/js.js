@@ -2,6 +2,9 @@
 function main(){
     document.getElementById("userselect").addEventListener("change", dbLookup);
     document.getElementById("btn_i").addEventListener("click", dbWrite);
+    var user = prompt("What is your name?");
+    localStorage.setItem("user", user);
+    alert(localStorage.getItem("user"));
 }
 function dbLookup(){
     //alert(document.getElementById("userselect").value);
@@ -22,8 +25,6 @@ function dbWrite(){
     var verse = document.getElementById("verse_i").value;
     var content = document.getElementById("content_i").value;
     var topic = document.getElementById("topic_i").value;
-
-    //alert("book=" + book + " chapter=" + chapter + " verse=" + verse + " content=" + content + " topic=" + topic);
 
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
