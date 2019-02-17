@@ -21,18 +21,13 @@ function dbLookup(){
     xmlhttp.send();
 }
 function makepost(){
-    alert("@");
-    var user = localStorage.getItem("user");
-    alert(user);
-    var message = prompt("Post:");
-    alert(message);
+    var post.user = localStorage.getItem("user");
+    post.message = prompt("Post:");
+    dbWrite(post)
 }
-function dbWrite(){
-    var book = document.getElementById("book_i").value;
-    var chapter = document.getElementById("chapter_i").value;
-    var verse = document.getElementById("verse_i").value;
-    var content = document.getElementById("content_i").value;
-    var topic = document.getElementById("topic_i").value;
+function dbWrite(post){
+    alert(post.user);
+    alert(post.message);
 
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
