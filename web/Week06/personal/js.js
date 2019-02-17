@@ -1,7 +1,6 @@
 //document.onload = main();
 function main(){
     document.getElementById("userselect").addEventListener("change", dbLookup);
-    //dbLookup(); //hardcoded
     document.getElementById("btn_i").addEventListener("click", dbWrite);
 }
 function dbLookup(){
@@ -10,7 +9,7 @@ function dbLookup(){
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            alert(this.responseText);
+            //alert(this.responseText);
             document.getElementById("output").innerHTML = this.responseText;
         }
     };

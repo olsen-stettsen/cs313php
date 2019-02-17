@@ -57,7 +57,7 @@ h1{
 }
 .postboxhead{
     width: 100%;
-    background-image: url("../postheader.png");
+    background-image: url("../../postheader.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-top-left-radius: 10pt;
