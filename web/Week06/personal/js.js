@@ -1,7 +1,7 @@
 //document.onload = main();
 function main(){
-    //document.getElementById("topicselect").addEventListener("change", dbLookup);
-    dbLookup(); //hardcoded
+    document.getElementById("userselect").addEventListener("change", dbLookup);
+    //dbLookup(); //hardcoded
     document.getElementById("btn_i").addEventListener("click", dbWrite);
 }
 function dbLookup(){
