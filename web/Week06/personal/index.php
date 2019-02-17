@@ -30,7 +30,8 @@
             <option value="Jim">Jim</option>
             <option value="Sally">Sally</option>
             <option value="all">All</option>
-        </select>   
+        </select>
+        <button id="mkpostbtn">Make a post</button>
         <div id="output"></div>               
     </div>
     </div>

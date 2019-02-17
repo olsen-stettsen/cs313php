@@ -1,17 +1,15 @@
 function main(){
     document.getElementById("userselect").addEventListener("change", dbLookup);
-    alert("1");
+    document.getElementById("mkpostbtn").addEventListener("change", makepost);
     getUser();
 }
 function getUser(){
-    alert("2");
     var user = prompt("What is your name?");
     localStorage.setItem("user", user);
-    alert(localStorage.getItem("user"));
 }
 function dbLookup(){
-    //alert(document.getElementById("userselect").value);
     var user = document.getElementById("userselect").value;
+    //alert(user);
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -21,6 +19,12 @@ function dbLookup(){
     };
     xmlhttp.open("GET", "getUserStuff.php?q=" + user, true); // '?' is the start and '&' is next var
     xmlhttp.send();
+}
+function makepost(){
+    var user = localStorage.getItem("user");
+    alert(user);
+    var message = prompt("Post:");
+    alert(message);
 }
 function dbWrite(){
     var book = document.getElementById("book_i").value;
