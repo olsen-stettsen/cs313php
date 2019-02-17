@@ -2,6 +2,11 @@
 function main(){
     document.getElementById("userselect").addEventListener("change", dbLookup);
     document.getElementById("btn_i").addEventListener("click", dbWrite);
+    alert("1");
+    getUser();
+}
+function getUser(){
+    alert("2");
     var user = prompt("What is your name?");
     localStorage.setItem("user", user);
     alert(localStorage.getItem("user"));
