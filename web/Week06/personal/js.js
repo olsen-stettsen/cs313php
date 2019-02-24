@@ -55,8 +55,8 @@ function deletemessage(e){
 function updatemessage(e){
     var user = e.parentElement.parentElement.children[0].innerHTML;
     var message = e.parentElement.parentElement.parentElement.children[1].innerHTML;
-    alert(message);
-    var newmessage = prompt("Edit:");
+    var newmessage = prompt("Edit:", message);
+
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
