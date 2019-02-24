@@ -39,5 +39,5 @@ function dbWrite(post){
     dbLookup();
 }
 function deletemessage(e){
-    alert(e.parent.innerHTML);
+    alert(e.parentElement.innerHTML);
 }
