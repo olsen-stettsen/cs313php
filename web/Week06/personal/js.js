@@ -38,3 +38,6 @@ function dbWrite(post){
     xmlhttp.send();
     dbLookup();
 }
+function deletemessage(e){
+    alert(e);
+}
