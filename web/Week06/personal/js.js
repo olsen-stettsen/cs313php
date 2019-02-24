@@ -63,7 +63,7 @@ function updatemessage(e){
             //document.getElementById("output").innerHTML = this.responseText;
         }
     };
-    xmlhttp.open("GET", "deletepost.php?user=" + user + "&message=" + message + "&newmessage=" + newmessage); // '?' is the start and '&' is next var
+    xmlhttp.open("GET", "updatepost.php?user=" + user + "&message=" + message + "&newmessage=" + newmessage); // '?' is the start and '&' is next var
     xmlhttp.send();
     dbLookup();
 }
