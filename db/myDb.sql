@@ -3,7 +3,7 @@ CREATE TABLE account_table (
     username        VARCHAR (255)   UNIQUE NOT NULL,
     user_password   VARCHAR (255)   NOT NULL,
     email           VARCHAR (255)   NOT NULL,
-    created_on      TIMESTAMP       NOT NULL,
+    created_on      TIMESTAMP,
     last_login      TIMESTAMP
 );
 CREATE TABLE post_table (
@@ -19,3 +19,4 @@ CREATE TABLE reply_table (
     repley_text     VARCHAR (500)   NOT NULL,
     media_link      VARCHAR(500) 
 );
+INSERT INTO account_table (username, user_password, email) VALUES ('steve', '1234', 'steve@bob.com');
