@@ -40,5 +40,15 @@ function dbWrite(post){
 }
 function deletemessage(e){
     var user = e.parentElement.parentElement.children[0].innerHTML;
-    alert(e.parentElement.parentElement.parentElement.children[1].innerHTML);
+    var message = e.parentElement.parentElement.parentElement.children[1].innerHTML;
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            //alert(this.responseText);
+            //document.getElementById("output").innerHTML = this.responseText;
+        }
+    };
+    xmlhttp.open("GET", "deletepost.php?user=" + user + "&message=" + message); // '?' is the start and '&' is next var
+    xmlhttp.send();
+    dbLookup();
 }
