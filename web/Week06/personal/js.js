@@ -40,5 +40,5 @@ function dbWrite(post){
 }
 function deletemessage(e){
     var user = e.parentElement.parentElement.children[0].innerHTML;
-    alert(e.parentElement.parentElement.parentElement.innerHTML);
+    alert(e.parentElement.parentElement.parentElement.children[1].innerHTML);
 }
