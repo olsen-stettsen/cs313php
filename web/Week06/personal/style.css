@@ -71,5 +71,5 @@ h1{
     padding-left: 10pt;
 }
 .messageoptions{
-    text-align: right;
+    float: right;
 }
