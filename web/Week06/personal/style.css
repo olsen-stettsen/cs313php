@@ -70,3 +70,6 @@ h1{
 .posttext{
     padding-left: 10pt;
 }
+.messageoptions{
+    float: right;
+}
