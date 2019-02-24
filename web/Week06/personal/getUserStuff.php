@@ -2,7 +2,7 @@
 require "getDB.php";
 $db = get_db();
 $q = $_REQUEST["q"];
-$statement = $db->prepare("SELECT * FROM account_table")
+$statement = $db->prepare("SELECT * FROM account_table");
 //$statement = $db->prepare("SELECT account_table.username, post_table.post_text FROM account_table INNER JOIN post_table ON account_table.user_id=post_table.user_id");
 $statement->execute();
 /*
