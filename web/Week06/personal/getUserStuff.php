@@ -14,6 +14,6 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
     $user = $row['user_name'];
     $post = $row['post_text'];
-    echo "<div class='postbox'><div class='postboxhead'><span class='usertext'>$user</span><span class='messageoptions'><a href='javascript:void(0);' onclick='updatemessage(this)''>edit</a><a href='javascript:void(0);' onclick='deletemessage(this)''>delete</a></span></div><span class='posttext'>$post</span></div>";
+    echo "<div class='postbox'><div class='postboxhead'><span class='usertext'>$user</span><span class='messageoptions'><a href='javascript:void(0);' onclick='updatemessage(this)''>edit</a> <a href='javascript:void(0);' onclick='deletemessage(this)''>delete</a></span></div><span class='posttext'>$post</span></div>";
 }
 ?>

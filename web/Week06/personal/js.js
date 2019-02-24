@@ -56,7 +56,6 @@ function updatemessage(e){
     var user = e.parentElement.parentElement.children[0].innerHTML;
     var message = e.parentElement.parentElement.parentElement.children[1].innerHTML;
     var newmessage = prompt("Edit:", message);
-    alert(newmessage);
 
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
