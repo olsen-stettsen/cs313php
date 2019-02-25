@@ -22,11 +22,11 @@ function userLookup(){
                 alert("I can't find an account with that name. Your account is now being created");
                 userWrite(user);
             }
-            optionvisible();
         }
     };
     xmlhttp.open("GET", "lookupuser.php?q=" + user, true); // '?' is the start and '&' is next var
     xmlhttp.send();
+    optionvisible();
 }
 function userWrite(user){
     var xmlhttp = new XMLHttpRequest();
