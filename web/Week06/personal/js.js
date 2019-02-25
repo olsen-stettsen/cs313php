@@ -3,6 +3,7 @@ function main(){
     document.getElementById("mkpostbtn").addEventListener("click", makepost);
     getUser();
     dbLookup();
+    alert("2");
     optionvisible();
 }
 function getUser(){
