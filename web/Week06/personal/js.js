@@ -3,7 +3,6 @@ function main(){
     document.getElementById("mkpostbtn").addEventListener("click", makepost);
     getUser();
     dbLookup();
-    optionvisible();
 }
 function getUser(){
     var user = prompt("What is your name?");
@@ -22,6 +21,7 @@ function userLookup(){
             if (this.responseText == "false"){
                 alert("I can't find an account with that name. Your account is now being created");
                 userWrite(user);
+                optionvisible();
             }
         }
     };
