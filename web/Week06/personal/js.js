@@ -20,12 +20,25 @@ function userLookup(){
         if (this.readyState == 4 && this.status == 200) {
             //alert(this.responseText);
             if (this.responseText == "false"){
-                alert("Your account is now being created");
+                alert("I can't find an account with that name. Your account is now being created");
+                userWrite(user);
             }
         }
     };
     xmlhttp.open("GET", "lookupuser.php?q=" + user, true); // '?' is the start and '&' is next var
     xmlhttp.send();
+}
+function userWrite(user){
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            //alert(this.responseText);
+            //document.getElementById("output").innerHTML = this.responseText;
+        }
+    };
+    xmlhttp.open("GET", "writeuser.php?user=" + user); // '?' is the start and '&' is next var
+    xmlhttp.send();
+    dbLookup();
 }
 function dbLookup(){
     var user = "all";
