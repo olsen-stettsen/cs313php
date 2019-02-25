@@ -3,6 +3,7 @@ function main(){
     document.getElementById("mkpostbtn").addEventListener("click", makepost);
     getUser();
     dbLookup();
+    optionvisible();
 }
 function getUser(){
     var user = prompt("What is your name?");
@@ -21,7 +22,6 @@ function userLookup(){
             if (this.responseText == "false"){
                 alert("I can't find an account with that name. Your account is now being created");
                 userWrite(user);
-                optionvisible();
             }
         }
     };
@@ -41,7 +41,6 @@ function userWrite(user){
     dbLookup();
 }
 function dbLookup(){
-    var user = "all";
     //alert(user);
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
@@ -50,7 +49,7 @@ function dbLookup(){
             document.getElementById("output").innerHTML = this.responseText;
         }
     };
-    xmlhttp.open("GET", "getUserStuff.php?q=" + user, true); // '?' is the start and '&' is next var
+    xmlhttp.open("GET", "getUserStuff.php?", true); // '?' is the start and '&' is next var
     xmlhttp.send();
 }
 function makepost(){
