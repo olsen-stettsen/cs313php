@@ -70,7 +70,7 @@ function updatemessage(e){
 }
 function replymessage(e){
     //var user = e.parentElement.parentElement.children[0].innerHTML;
-    var message = e.parentElement.parentElement.children[1].innerHTML;
+    var message = e.parentElement.children[1].innerHTML;
     alert(message);
    // var newmessage = prompt("Edit:", message);
 /*
