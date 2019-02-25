@@ -3,7 +3,6 @@ function main(){
     document.getElementById("mkpostbtn").addEventListener("click", makepost);
     getUser();
     dbLookup();
-    optionvisible();
 }
 function getUser(){
     var user = prompt("What is your name?");
@@ -23,6 +22,7 @@ function userLookup(){
                 alert("I can't find an account with that name. Your account is now being created");
                 userWrite(user);
             }
+            optionvisible();
         }
     };
     xmlhttp.open("GET", "lookupuser.php?q=" + user, true); // '?' is the start and '&' is next var
@@ -117,10 +117,10 @@ function replymessage(e){
 }
 function optionvisible(){
     var postlist = document.getElementsByClassName("messageoptions");
-    alert(localStorage.getItem("user"));
+    //alert(localStorage.getItem("user"));
     for (var i = 0; i < postlist.length; i++){
         if (postlist[i].parentElement.children[0].innerHTML  == localStorage.getItem("user")){
-            alert("u");
+            //alert("u");
             postlist[i].style.display = "block";
         }
     }
