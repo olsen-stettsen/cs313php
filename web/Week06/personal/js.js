@@ -86,6 +86,7 @@ function replymessage(e){
     dbLookup();
 }
 function optionvisible(){
+    alert('Bou');
     var postlist = document.getElementsByClassName("messageoptions");
     for (var i = 0; i < postlist.length; i++){
         alert(postlist[i].parentElement.innerHTML);
