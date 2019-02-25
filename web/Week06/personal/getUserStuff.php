@@ -17,6 +17,14 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
     $user = $row['username'];
     $post = $row['post_text'];
-    echo "<div class='postbox'><div class='postboxhead'><span class='usertext'>$user</span><span class='messageoptions'><a href='javascript:void(0);' onclick='updatemessage(this)''>edit</a> <a href='javascript:void(0);' onclick='deletemessage(this)''>delete</a></span></div><span class='posttext'>$post</span><a class='messageoptions' href='javascript:void(0);' onclick='replymessage(this)''>reply</a></div>";
+    echo "<div class='postbox'><div class='postboxhead'><span class='usertext'>$user</span><span class='messageoptions'><a href='javascript:void(0);' onclick='updatemessage(this)''>edit</a> <a href='javascript:void(0);' onclick='deletemessage(this)''>delete</a></span></div><span class='posttext'>$post</span><a class='messageoptions' href='javascript:void(0);' onclick='replymessage(this)''>reply</a><div class='replyfield'>"
+    $statement = $db->prepare("SELECT repley_text FROM reply_table WHERE post_id=(SELECT post_id FROM post_table WHERE post_text='$post')");
+    $statement->execute();
+    while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+    {
+        $reply = $row['reply_text'];
+        echo "<br>$reply"
+    }
+    echo "</div></div>";
 }
 ?>
