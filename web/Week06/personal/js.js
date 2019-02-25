@@ -117,11 +117,10 @@ function replymessage(e){
 }
 function optionvisible(){
     var postlist = document.getElementsByClassName("messageoptions");
-    var user = localStorage.getItem("user");
-    console.log(user);
+    console.log(localStorage.getItem("user"));
     for (var i = 0; i < postlist.length; i++){
-        if (postlist[i].parentElement.children[0].innerHTML  == user){
-            console.log(postlist[i].parentElement.children[0].innerHTML);
+        if (postlist[i].parentElement.children[0].innerHTML  == localStorage.getItem("user")){
+            console.log("u");
             postlist[i].style.display = "block";
         }
     }
