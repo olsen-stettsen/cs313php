@@ -3,6 +3,7 @@ function main(){
     document.getElementById("mkpostbtn").addEventListener("click", makepost);
     getUser();
     dbLookup();
+    optionvisible();
 }
 function getUser(){
     var user = prompt("What is your name?");
@@ -83,4 +84,10 @@ function replymessage(e){
     xmlhttp.open("GET", "replypost.php?user=" + user + "&message=" + message + "&reply=" + reply); // '?' is the start and '&' is next var
     xmlhttp.send();
     dbLookup();
+}
+function optionvisible(){
+    var postlist = document.getElementsByClassName("messageoptions");
+    postlist.forEach(element => {
+        alert(element.parentElement.innerHTML);
+      });
 }
