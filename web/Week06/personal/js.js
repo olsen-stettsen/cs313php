@@ -9,7 +9,7 @@ function getUser(){
     localStorage.setItem("user", user);
 }
 function dbLookup(){
-    var user = document.getElementById("userselect").value;
+    var user = "all";
     //alert(user);
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
@@ -69,11 +69,10 @@ function updatemessage(e){
     dbLookup();
 }
 function replymessage(e){
-    //var user = e.parentElement.parentElement.children[0].innerHTML;
+    var user = localStorage.getItem("user");
     var message = e.parentElement.children[1].innerHTML;
-    alert(message);
-   // var newmessage = prompt("Edit:", message);
-/*
+    var reply = prompt("Reply:");
+
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -81,7 +80,7 @@ function replymessage(e){
             //document.getElementById("output").innerHTML = this.responseText;
         }
     };
-    xmlhttp.open("GET", "updatepost.php?user=" + user + "&message=" + message + "&newmessage=" + newmessage); // '?' is the start and '&' is next var
+    xmlhttp.open("GET", "replypost.php?user=" + user + "&message=" + message + "&reply=" + reply); // '?' is the start and '&' is next var
     xmlhttp.send();
-    dbLookup();*/
+    dbLookup();
 }
