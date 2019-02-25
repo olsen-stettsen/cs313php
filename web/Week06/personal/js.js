@@ -117,8 +117,9 @@ function replymessage(e){
 }
 function optionvisible(){
     var postlist = document.getElementsByClassName("messageoptions");
+    var user = localStorage.getItem("user");
     for (var i = 0; i < postlist.length; i++){
-        if (postlist[i].parentElement.children[0].innerHTML  == localStorage.getItem("user")){
+        if (postlist[i].parentElement.children[0].innerHTML  == user){
             postlist[i].style.display = "block";
         }
     }
