@@ -116,10 +116,10 @@ function replymessage(e){
     dbLookup();
 }
 function optionvisible(){
-    alert("u");
     var postlist = document.getElementsByClassName("messageoptions");
     for (var i = 0; i < postlist.length; i++){
         if (postlist[i].parentElement.children[0].innerHTML  == localStorage.getItem("user")){
+            alert(postlist[i].parentElement.children[0].innerHTML);
             postlist[i].style.display = "block";
         }
     }
