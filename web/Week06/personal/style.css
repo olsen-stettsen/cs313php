@@ -71,6 +71,7 @@ h1{
     padding-left: 10pt;
 }
 .messageoptions{
+    display: none;
     float: right;
     padding-right: 12pt;
     font-size: 8pt;
