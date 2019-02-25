@@ -87,7 +87,7 @@ function replymessage(e){
 }
 function optionvisible(){
     var postlist = document.getElementsByClassName("messageoptions");
-    postlist.forEach(element => {
-        alert(element.parentElement.innerHTML);
-      });
+    for (var i = 0; i < postlist.length; i++){
+        alert(postlist[i].parentElement.innerHTML);
+    }
 }
