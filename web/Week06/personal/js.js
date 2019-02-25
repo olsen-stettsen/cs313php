@@ -3,7 +3,6 @@ function main(){
     document.getElementById("mkpostbtn").addEventListener("click", makepost);
     getUser();
     dbLookup();
-    alert("2");
     optionvisible();
 }
 function getUser(){
@@ -117,6 +116,7 @@ function replymessage(e){
     dbLookup();
 }
 function optionvisible(){
+    alert("u");
     var postlist = document.getElementsByClassName("messageoptions");
     for (var i = 0; i < postlist.length; i++){
         if (postlist[i].parentElement.children[0].innerHTML  == localStorage.getItem("user")){
