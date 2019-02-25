@@ -23,13 +23,13 @@
     </div>
     <div id="textwrap">
     <div id="content">
-        <h1>User Messages</h1><!--
+        <h1>User Messages</h1>
         <select name="userslist" id="userselect">
             <option value="all">All</option>
             <option value="Steve">Steve</option>
             <option value="Jim">Jim</option>
             <option value="Sally">Sally</option>
-        </select>-->
+        </select>
         <button id="mkpostbtn">Make a post</button>
         <div id="output"></div>               
     </div>
