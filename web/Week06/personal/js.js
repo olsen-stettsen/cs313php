@@ -1,5 +1,5 @@
 function main(){
-    document.getElementById("userselect").addEventListener("change", dbLookup);
+    //document.getElementById("userselect").addEventListener("change", dbLookup);
     document.getElementById("mkpostbtn").addEventListener("click", makepost);
     getUser();
     dbLookup();
