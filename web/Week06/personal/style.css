@@ -76,6 +76,12 @@ h1{
     padding-right: 12pt;
     font-size: 8pt;
 }
+.messageoptions2{
+    display: none;
+    float: right;
+    padding-right: 12pt;
+    font-size: 8pt;
+}
 .replyfield{
     background-color: #ffffff67;
 }
