@@ -45,7 +45,6 @@ function deletemessage(e){
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             //alert(this.responseText);
-            alert("hello");
             //document.getElementById("output").innerHTML = this.responseText;
         }
     };
@@ -61,7 +60,7 @@ function updatemessage(e){
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            alert(this.responseText);
+            //alert(this.responseText);
             //document.getElementById("output").innerHTML = this.responseText;
         }
     };
