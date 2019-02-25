@@ -3,6 +3,7 @@ function main(){
     document.getElementById("mkpostbtn").addEventListener("click", makepost);
     getUser();
     dbLookup();
+    window.setTimeout(optionvisible, 1000);
 }
 function getUser(){
     var user = prompt("What is your name?");
@@ -26,7 +27,6 @@ function userLookup(){
     };
     xmlhttp.open("GET", "lookupuser.php?q=" + user, true); // '?' is the start and '&' is next var
     xmlhttp.send();
-    optionvisible();
 }
 function userWrite(user){
     var xmlhttp = new XMLHttpRequest();
