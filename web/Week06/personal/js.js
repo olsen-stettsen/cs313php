@@ -8,7 +8,9 @@ function main(){
 function getUser(){
     var user = prompt("What is your name?");
     localStorage.setItem("user", user);
-    userLookup();
+    if (!userLookup()){
+        alert("Your account is now being created");
+    }
 }
 function userLookup(){
     var user = localStorage.getItem("user");
