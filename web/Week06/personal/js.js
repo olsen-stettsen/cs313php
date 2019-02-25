@@ -15,17 +15,17 @@ function getUser(){
 function userLookup(){
     var user = localStorage.getItem("user");
     //alert(user);
-    var ex = "";
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            alert(this.responseText);
-            ex = this.responseText;
+            //alert(this.responseText);
+            if (this.responseText == "false"){
+                alert("Your account is now being created");
+            }
         }
     };
     xmlhttp.open("GET", "lookupuser.php?q=" + user, true); // '?' is the start and '&' is next var
     xmlhttp.send();
-    return ex;
 }
 function dbLookup(){
     var user = "all";
