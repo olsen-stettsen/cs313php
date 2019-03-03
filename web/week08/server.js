@@ -6,7 +6,13 @@ function onRequest(req, res){
   console.log("request");
   if (req.url == '/home'){
     res.setHeader('Content-Type', 'text/html');
-    res.write("<h1>Welcome to the Home Page</h1>");
+    fs.readFile('../index.html', (err, html) =>{
+      if(err){
+        console.log("no html");
+      }
+      res.write(html);
+    });
+    //res.write("<h1>Welcome to the Home Page</h1>");
   }
   else if (req.url == '/getData'){
     res.setHeader('Content-Type', 'application/json');
