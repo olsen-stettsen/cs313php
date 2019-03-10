@@ -1,0 +1,68 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Arial Black,Arial Bold,sans-serif;
+}
+h1{
+    margin: 0%;
+}
+#header{
+    background-image: url("./islandheader2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#headerfilter{
+    padding-top: 20px;
+    padding-bottom: 20px;/*
+    background-image: linear-gradient(to right,#ffffff00, #ffffff);*/
+}
+#logo{
+    max-height: 48pt;
+    padding-left: 20px;
+}
+#navBar{
+    background-color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navI{
+    list-style-type: none;
+    color: #ffffff;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.navI:hover{
+    background-color: #ff0000;
+}
+.breadcrumb{
+    visibility: hidden;
+    font-size: 8pt;
+}
+#textwrap{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.picCon{
+    text-align: center;
+}
+.pic{
+    border-radius: 12px;
+    max-width: 60%;
+}
+#login{
+    text-align: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:400px;
+    height:150px;
+    margin-left:-200px;
+    margin-top:-75px;
+    border: solid #000000 2px;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
