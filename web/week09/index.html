@@ -23,27 +23,20 @@
     </div>
     <div id="content">
         <div id="textwrap">
-            <p>Hello!<br>
-                My name is Stettsen Olsen. My beautiful wife, Chelsey, and I 
-                live in Lehi, Utah. We have three kids, two girls and one boy.
-                I am a Software Engineering major and will be done with school 
-                this July. I am a Full Stack Developer at Symantec as of last week. 
-                I really enjoy it. <br>
-                I love to lift weights, run, and I have a single Discus fish. 'Licht.' 
-                None of them take too much time because my real hobby is my family. We 
-                went camping a few times last summer and I hope we get that chance again 
-                this year! <br>
-                This is picture of my kids under the tree last year!<br>
-                <div class="picCon">
-                <img class="pic" src="https://raw.githubusercontent.com/blitzolsen/media/master/20181118_230233.jpg" alt="kids_under_the_tree.jpg">
-            </div>
-            </p>
+            <h1>Page 1</h1>
+                <form action="./getRate" method="post">
+                        Shipping Method:
+                        <select id="method" name="method">
+                                <option value="flat">flat</option>
+                                <option value="premium">premium</option>
+                                <option value="platinum">platinum</option>
+                                <option value="economic">economic</option>
+                        </select> 
+                        Weight:
+                        <input type="number" id="inputF" name="inputF">
+                        <button>Submit</button>
+                </form>
         </div>
-    </div>
-    <div id="login">
-        <h4>Welcome! I would love to know who's visiting!</h4>
-        <input id="loginname" type="text" placeholder="Name">
-        <button id="subbtn">Submit</button>
     </div>
 </body>
 
